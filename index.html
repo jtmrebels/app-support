@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>JT M22 Tech — App Support</title>
+  <meta name="description" content="Support, privacy, and terms for JT M22 Tech apps." />
+  <style>
+    :root { --max: 920px; --pad: 22px; --radius: 14px; }
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.5; color:#111; background:#f6f7f9; }
+    header { background:#111; color:#fff; padding: 38px 0; }
+    main { max-width: var(--max); margin: 0 auto; padding: var(--pad); }
+    .wrap { background:#fff; border-radius: var(--radius); padding: 22px; box-shadow: 0 8px 24px rgba(0,0,0,.08); }
+    h1 { margin: 0 0 6px; font-size: 28px; }
+    header p { margin: 0; opacity: .9; }
+    h2 { margin-top: 26px; font-size: 18px; }
+    p, li { color:#222; }
+    .grid { display:grid; grid-template-columns: 1fr; gap: 14px; }
+    .card { border: 1px solid #e6e8ec; border-radius: 12px; padding: 16px; background:#fff; }
+    a { color:#0b5fff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .pill { display:inline-block; padding: 6px 10px; border-radius: 999px; background:#eef3ff; border:1px solid #d7e3ff; font-size: 13px; }
+    footer { margin: 18px 0 40px; color:#555; font-size: 13px; }
+    code { background:#f1f3f5; padding: 2px 6px; border-radius: 6px; }
+  </style>
+</head>
+
+<body>
+  <header>
+    <main>
+      <h1>JT M22 Tech — App Support</h1>
+      <p>Help, contact, privacy, and terms for my iOS apps.</p>
+    </main>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <div class="grid">
+        <div class="card">
+          <span class="pill">Contact Support</span>
+          <h2>Email</h2>
+          <p>
+            For help with any app, email:
+            <a href="mailto:help@jtm22tech.com">help@jtm22tech.com</a>
+          </p>
+          <p>
+            To speed things up, include:
+          </p>
+          <ul>
+            <li>App name</li>
+            <li>Device model and iOS version</li>
+            <li>What you expected vs. what happened</li>
+            <li>Screenshots (if possible)</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <span class="pill">Frequently Asked Questions</span>
+          <h2>Common Questions</h2>
+          <ul>
+            <li><strong>Restoring purchases:</strong> If you purchased a subscription or lifetime unlock, look for <em>Restore Purchases</em> in the app’s settings or paywall.</li>
+            <li><strong>Subscriptions:</strong> Subscriptions are managed by Apple. You can view, change, or cancel in iOS: <code>Settings → Apple ID → Subscriptions</code>.</li>
+            <li><strong>Billing issues:</strong> Apple handles billing directly. If a charge looks incorrect, check your Apple purchase history.</li>
+            <li><strong>App not working:</strong> Try force closing the app, reopening, and ensuring you’re on the latest version from the App Store.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <span class="pill">Privacy</span>
+          <h2>Privacy Policy (Summary)</h2>
+          <p>
+            I aim to collect as little personal data as possible. If an app uses analytics or crash reporting,
+            it is used to improve stability and performance.
+          </p>
+          <p>
+            If you want a copy of the specific privacy details for a particular app, email
+            <a href="mailto:help@jtm22tech.com">help@jtm22tech.com</a> with the app name.
+          </p>
+          <p><em>Last updated:</em> February 7, 2026</p>
+        </div>
+
+        <div class="card">
+          <span class="pill">Terms</span>
+          <h2>Terms of Use</h2>
+          <p>
+            Use of these apps is provided “as is.” Features may change over time as apps are improved.
+            Where applicable, purchases and subscriptions are handled by Apple and subject to Apple’s terms.
+          </p>
+          <p>
+            If you need formal terms for a specific app (especially if it includes subscriptions), request them at
+            <a href="mailto:help@jtm22tech.com">help@jtm22tech.com</a>.
+          </p>
+          <p><em>Last updated:</em> February 7, 2026</p>
+        </div>
+      </div>
+
+      <footer>
+        <p>© <span id="y"></span> JT M22 Tech. All rights reserved.</p>
+      </footer>
+    </div>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
